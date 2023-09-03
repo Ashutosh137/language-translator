@@ -260,7 +260,6 @@
     try {
       const response = await fetch(url, options);
       const responseJson = await response.json();
-      console.log(responseJson);
       return responseJson.data.translations[0].translatedText;
     } catch (error) {
       console.error(error);
